@@ -166,3 +166,36 @@ for(const product of products){
     }
 }
 console.log(output);
+
+// ===================================================
+// Sorting big numbers by compare function
+// ===================================================
+const bigNumbers = [66, 58, 81, 92, 9, 6, 37, 13, 2];
+const sortedBigNumbers = bigNumbers.sort(function(a, b){
+    return a - b;
+});
+console.log(sortedBigNumbers);
+
+// ===================================================
+// Addition numbers & srtrng without calling parameters
+// ===================================================
+// Numbers
+function addNumbers(){
+    let result = 0;
+    for(const num of arguments){
+        result = result + num;
+    }
+    return result;
+}
+const result = addNumbers(23, 13, 50, 100, 420, 4);
+console.log(result);
+// String
+function getFullName(firstName, lastName){
+    let fullName = "";
+    for(const part of arguments){
+        fullName = fullName + part + " ";
+    }
+    return fullName;
+}
+const name = getFullName("Omuk", "Songket", "bin", "Hanif", "Songket");
+console.log(name);
