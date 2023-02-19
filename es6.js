@@ -68,7 +68,7 @@ const {phone, price} = fish;
 console.log(price); */
 
 //=============== Chaining & Optional Chaining ===============//
-const users = [ {id: 1, name: 'abul', job: 'doctor'} ]
+/* const users = [ {id: 1, name: 'abul', job: 'doctor'} ]
 // console.log(users[0].name);
 
 const data = {
@@ -93,4 +93,46 @@ const user = {
         city: 'Dhaka'
     }
 } 
-console.log(user?.address?.stret)
+console.log(user?.address?.stret) */
+
+//=============== Array map() ===============//
+/* const numbers = [2, 8, 4, 6, 3];
+// Traditional way. //
+const doubleIt = numbers => {
+    const output = [];
+    for(const number of numbers){
+        const double = number * 2;
+        output.push(double);
+    }
+    return output;
+}
+const result = doubleIt(numbers);
+// console.log(result);
+
+// With map() //
+const makeItDouble = num => num * 2;
+const makeDouble = numbers.map(makeItDouble);
+// console.log(makeDouble);
+
+const makeDoubleV2 = numbers.map(x =>{
+    return x *2
+});
+console.log(makeDoubleV2); */
+
+//=============== More map() ===============//
+/* const numbers = [12, 56, 87, 44];
+const half = numbers.map(n => n / 2);
+// console.log(half);
+
+const friends = ['Tom Hanks', 'Tom Cruise', 'Tom Brady', 'TOM Solaiman', 'D1'];
+const firstLetters = friends.map(friend => friend[0]);
+// console.log(firstLetters)
+
+const products = [
+    {id: 1, name: 'laptop', price: 45000},
+    {id: 1, name: 'mobile', price: 80000},
+    {id: 1, name: 'watch', price: 35000},
+    {id: 1, name: 'tablet', price: 23000},
+];
+const productsName = products.map(product => product.name);
+console.log(productsName); */
