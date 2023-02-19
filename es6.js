@@ -136,3 +136,19 @@ const products = [
 ];
 const productsName = products.map(product => product.name);
 console.log(productsName); */
+
+//=============== forEach() ===============//
+/* const friends = ['Tom Hanks', 'Tom Cruise', 'Tom Brady', 'TOM Solaiman', 'D1'];
+// friends.forEach(friend => console.log(friend));
+
+const products = [
+    {id: 1, name: 'laptop', price: 45000},
+    {id: 1, name: 'mobile', price: 80000},
+    {id: 1, name: 'watch', price: 35000},
+    {id: 1, name: 'tablet', price: 23000},
+];
+const productsName = [];
+products.forEach(product => {
+    productsName.push(product.name)
+});
+console.log(productsName); */
