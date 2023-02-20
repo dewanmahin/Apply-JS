@@ -181,3 +181,24 @@ const total = numbers.reduce((previous, current) => {
     return previous + current;
 }, 0)
 console.log(total); */
+
+//=============== dot-notation ===============//
+const student = {
+    name: 'Kolim Uddin',
+    age: 15,
+    class: 'Ten',
+    marks: {
+        math: 78,
+        physics: 89,
+        chemistry: 65
+    },
+}
+const marks = student.marks.physics;
+// console.log(marks)
+
+const subject = 'math';
+const marks1 = student.marks.subject; // This won't work in that way as since we can see subject is a variable in there, in this case to access the subject we have to use square brackets to access the variable
+// console.log(marks1)
+
+const marks2 = student.marks[subject]; // This is the right way to access the variable
+console.log(marks2);
