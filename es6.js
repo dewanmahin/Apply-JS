@@ -183,7 +183,7 @@ const total = numbers.reduce((previous, current) => {
 console.log(total); */
 
 //=============== dot-notation ===============//
-const student = {
+/* const student = {
     name: 'Kolim Uddin',
     age: 15,
     class: 'Ten',
@@ -201,4 +201,4 @@ const marks1 = student.marks.subject; // This won't work in that way as since we
 // console.log(marks1)
 
 const marks2 = student.marks[subject]; // This is the right way to access the variable
-console.log(marks2);
+console.log(marks2); */
