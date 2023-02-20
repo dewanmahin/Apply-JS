@@ -1,29 +1,29 @@
 //=============== Block Scope ===============//
-/* const numbers = [20, 35, 41, 65, 12, 30];
+const numbers = [20, 35, 41, 65, 12, 30];
 console.log(numbers)
 
 for(let i = 0; i < numbers.length; i++){
     const number = numbers[i];
-    console.log(number);
-} */
+    // console.log(number);
+}
 
 //=============== Default Parameter ===============//
-/* function add(first = 60, second = 40){
+function add(first = 60, second = 40){
     console.log(first, second)
     const total = first + second;
     return total;
 }
 const result = add();
-console.log(result); */
+// console.log(result);
 
 //=============== Template String ===============//
-/* const a = 20;
+const a = 20;
 const b = 30;
 const summary = `Sum of: ${a} and ${b} is ${a + b}`
-console.log(summary) */
+// console.log(summary)
 
 //=============== Arrow Function ===============//
-/* const add = function add(first, second){
+const add = function add(first, second){
     const total = first + second;
     return total;
 }
@@ -38,25 +38,25 @@ const add2 = function(first, second){
 const add3 = (first, second) => first + second;
 
 const result = add3(20, 30);
-console.log(result); */
+// console.log(result);
 
 //=============== Multiline Arrow Function ===============//
-/* const doMath = (x, y, z) => {
+const doMath = (x, y, z) => {
     const firstSum = x + y;
     const secondSum = y + z;
     const multiplyResult = firstSum * secondSum;
     const result = multiplyResult / 2;
     return result;
 }
-console.log(doMath(5, 8, 12)); */
+// console.log(doMath(5, 8, 12));
 
 //=============== Spread Operator ===============//
-/* const numbers = [50, 30, 36, 165, 45, 95];
+const numbers = [50, 30, 36, 165, 45, 95];
 const largest = Math.max(...numbers);
-console.log(largest); */
+// console.log(largest);
 
 //=============== Destructuring ===============//
-/* const fish = {
+const fish = {
     name: 'King Hilsa', 
     address: 'Chandpur',
     color: 'silver',
@@ -65,10 +65,10 @@ console.log(largest); */
 }
 // const phone = fish.phone;
 const {phone, price} = fish;
-console.log(price); */
+// console.log(price);
 
 //=============== Chaining & Optional Chaining ===============//
-/* const users = [ {id: 1, name: 'abul', job: 'doctor'} ]
+const users = [ {id: 1, name: 'abul', job: 'doctor'} ]
 // console.log(users[0].name);
 
 const data = {
@@ -93,10 +93,10 @@ const user = {
         city: 'Dhaka'
     }
 } 
-console.log(user?.address?.stret) */
+// console.log(user?.address?.stret)
 
 //=============== Array map() ===============//
-/* const numbers = [2, 8, 4, 6, 3];
+const numbers = [2, 8, 4, 6, 3];
 // Traditional way. //
 const doubleIt = numbers => {
     const output = [];
@@ -117,10 +117,10 @@ const makeDouble = numbers.map(makeItDouble);
 const makeDoubleV2 = numbers.map(x =>{
     return x *2
 });
-console.log(makeDoubleV2); */
+// console.log(makeDoubleV2);
 
 //=============== More map() ===============//
-/* const numbers = [12, 56, 87, 44];
+const numbers = [12, 56, 87, 44];
 const half = numbers.map(n => n / 2);
 // console.log(half);
 
@@ -135,10 +135,10 @@ const products = [
     {id: 1, name: 'tablet', price: 23000},
 ];
 const productsName = products.map(product => product.name);
-console.log(productsName); */
+// console.log(productsName);
 
 //=============== forEach() ===============//
-/* const friends = ['Tom Hanks', 'Tom Cruise', 'Tom Brady', 'TOM Solaiman', 'D1'];
+const friends = ['Tom Hanks', 'Tom Cruise', 'Tom Brady', 'TOM Solaiman', 'D1'];
 // friends.forEach(friend => console.log(friend));
 
 const products = [
@@ -151,11 +151,11 @@ const productsName = [];
 products.forEach(product => {
     productsName.push(product.name)
 });
-console.log(productsName); */
+// console.log(productsName);
 
 //=============== filter() and find() ===============//
 // filter //
-/* const numbers = [12, 5, 23, 45, 11, 18, 9, 55, 61, 1];
+const numbers = [12, 5, 23, 45, 11, 18, 9, 55, 61, 1];
 const bigNums = numbers.filter(number => number > 20);
 // console.log(bigNums);
 
@@ -171,19 +171,19 @@ const expensive = products.filter(product => product.price > 100000);
 // find //
 const numbers1 = [12, 5, 23, 45, 11, 18, 9, 55, 61, 1];
 const five = numbers1.find(num => num % 5 == 0);
-// console.log(five); */
+// console.log(five);
 
 //=============== reduce() ===============//
-/* const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
 const total = numbers.reduce((previous, current) => {
     // console.log(previous, current);
     return previous + current;
 }, 0)
-console.log(total); */
+// console.log(total);
 
 //=============== dot-notation ===============//
-/* const student = {
+const student = {
     name: 'Kolim Uddin',
     age: 15,
     class: 'Ten',
@@ -201,4 +201,4 @@ const marks1 = student.marks.subject; // This won't work in that way as since we
 // console.log(marks1)
 
 const marks2 = student.marks[subject]; // This is the right way to access the variable
-console.log(marks2); */
+// console.log(marks2);
